@@ -16,13 +16,15 @@ public class MainViewModel : ObservableObject
             new RelayCommand(() => SelectedViewModel = Ioc.Default.GetRequiredService<FirstPageViewModel>());
         ShowSecondViewModel =
             new RelayCommand(() => SelectedViewModel = Ioc.Default.GetRequiredService<SecondPageViewModel>());
+        ShowThirdViewModel =
+            new RelayCommand(() => SelectedViewModel = Ioc.Default.GetRequiredService<ThirdPageViewModel>());
 
         SelectedViewModel = Ioc.Default.GetRequiredService<FirstPageViewModel>();
     }
 
     public ICommand ShowFirstViewModel { get; }
     public ICommand ShowSecondViewModel { get; }
-
+    public ICommand ShowThirdViewModel { get; }
     public ObservableObject? SelectedViewModel
     {
         get => _selectedViewModel;

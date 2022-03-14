@@ -25,6 +25,7 @@ public partial class App : Application
                 // //Page ViewModels
                 .AddTransient<FirstPageViewModel>()
                 .AddTransient<SecondPageViewModel>()
+                .AddTransient<ThirdPageViewModel>()
                 //WPF
                 .AddSingleton<MainViewModel>()
                 //.AddSingleton<IViewFactory>(mappingViewFactory)

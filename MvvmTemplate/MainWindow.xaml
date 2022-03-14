@@ -16,6 +16,7 @@
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 			<Button Margin="10" Command="{Binding ShowFirstViewModel}">First Page</Button>
 			<Button Margin="10" Command="{Binding ShowSecondViewModel}">Second Page</Button>
+			<Button Margin="10" Command="{Binding ShowThirdViewModel}">Third Page</Button>
 		</StackPanel>
 		<MvvmTemplate:ViewModelPresenter Grid.Row="1" ViewModel="{Binding SelectedViewModel}" />
 	</Grid>
