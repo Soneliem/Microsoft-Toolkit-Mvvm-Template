@@ -15,6 +15,7 @@
 		<TextBlock Text="{Binding CustomObject.Text, Mode=OneWay}" />
 		<TextBlock Text="{Binding CustomObject.Number, Mode=OneWay}" />
 			<Button Command="{Binding IncrementCountCommand}">Increment Counter</Button>
+		<Button Command="{Binding DataContext.ShowFirstViewModel, RelativeSource={RelativeSource AncestorType=Window}}">Navigate to first</Button>
 	</StackPanel>
 
 
